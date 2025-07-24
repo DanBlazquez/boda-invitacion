@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Confirmación de Asistencia</title>
+</head>
+<body>
+  <h1>Confirmación de Asistencia a la Boda</h1>
+  <p>Por favor, confirma tu asistencia rellenando el siguiente formulario:</p>
+
+  <form action="https://formsubmit.co/TU_CORREO@gmail.com" method="POST">
+    <input type="hidden" name="_next" value="https://tusitio.github.io/gracias.html">
+    <input type="hidden" name="_captcha" value="false">
+
+    <label for="nombre">Nombre completo:</label><br>
+    <input type="text" name="nombre" required><br><br>
+
+    <label for="acompanante">¿Vendrás con acompañante?</label><br>
+    <input type="text" name="acompanante" placeholder="Nombre del acompañante"><br><br>
+
+    <label for="alergenos">¿Tienes algún alérgeno o requerimiento alimenticio?</label><br>
+    <textarea name="alergenos" rows="4" cols="40"></textarea><br><br>
+
+    <label>¿Confirmas tu asistencia?</label><br>
+    <input type="radio" name="confirmacion" value="Sí" required> Sí<br>
+    <input type="radio" name="confirmacion" value="No"> No<br><br>
+
+    <button type="submit">Enviar</button>
+  </form>
+</body>
+</html>
