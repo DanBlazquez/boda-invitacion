@@ -9,25 +9,23 @@
   <h1>Confirmación de Asistencia a la Boda</h1>
   <p>Por favor, confirma tu asistencia rellenando el siguiente formulario:</p>
 
-  <form action="https://script.google.com/macros/s/AKfycbz6lYhNwaq6AIamANSbOvIH8udomppNA4XsvKXTcefrQlDdf7MrMCtBei89oHZn-wlq/exec" method="POST">
-    <input type="hidden" name="_next" value="https://tusitio.github.io/gracias.html">
-    <input type="hidden" name="_captcha" value="false">
+<form action="https://script.google.com/macros/s/AKfycbz6IYhNwaq6A1amANSbOvTl8UdomppNA4XsvKXTcefrQ1Ddf7MrMCtBei89oHZn-wLq/exec" method="POST">
+  <label for="nombre">Nombre completo:</label><br>
+  <input type="text" name="nombre" required><br><br>
 
-    <label for="nombre">Nombre completo:</label><br>
-    <input type="text" name="nombre" required><br><br>
+  <label for="acompanante">¿Vendrás con acompañante?</label><br>
+  <input type="text" name="acompanante" placeholder="Nombre del acompañante"><br><br>
 
-    <label for="acompanante">¿Vendrás con acompañante?</label><br>
-    <input type="text" name="acompanante" placeholder="Nombre del acompañante"><br><br>
+  <label for="alergenos">¿Tienes algún alérgeno o requerimiento alimenticio?</label><br>
+  <textarea name="alergenos" rows="4" cols="40"></textarea><br><br>
 
-    <label for="alergenos">¿Tienes algún alérgeno o requerimiento alimenticio?</label><br>
-    <textarea name="alergenos" rows="4" cols="40"></textarea><br><br>
+  <label>¿Confirmas tu asistencia?</label><br>
+  <input type="radio" name="confirmacion" value="Sí" required> Sí<br>
+  <input type="radio" name="confirmacion" value="No"> No<br><br>
 
-    <label>¿Confirmas tu asistencia?</label><br>
-    <input type="radio" name="confirmacion" value="Sí" required> Sí<br>
-    <input type="radio" name="confirmacion" value="No"> No<br><br>
+  <button type="submit">Enviar</button>
+</form>
 
-    <button type="submit">Enviar</button>
-  </form>
 
   <h2>Ubicación de la ceremonia</h2>
 <p>La ceremonia tendrá lugar en:</p>
