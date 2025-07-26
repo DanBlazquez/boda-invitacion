@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Invitación de Boda</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background: #f8f4ef;
+      color: #4b3621;
+      scroll-behavior: smooth;
+    }
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .hero {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background: #f1e6d6;
+    }
+    .boton {
+      display: inline-block;
+      margin: 20px 10px;
+      padding: 12px 24px;
+      background: #4b3621;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+    iframe {
+      width: 100%;
+      max-width: 600px;
+      height: 300px;
+      border: 0;
+    }
+    form {
+      max-width: 500px;
+      margin: auto;
+      text-align: left;
+    }
+    label, input, textarea {
+      display: block;
+      width: 100%;
+      margin-bottom: 15px;
+      font-size: 1em;
+    }
+    input, textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    footer {
+      font-size: 0.9em;
+      color: #999;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="hero" id="inicio">
+    <h1>Nombre & Nombre</h1>
+    <p>¡Nos casamos!</p>
+    <a href="#ubicacion" class="boton">Ver Ubicación</a>
+    <a href="#confirmar" class="boton">Confirmar Asistencia</a>
+  </section>
+
+  <section id="ubicacion">
+    <h2>Ubicación</h2>
+    <p>La ceremonia tendrá lugar en el siguiente lugar:</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10000!2d0!3d0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMDDCsDAwJzAwLjAiTiAwwrAwMCcwMC4wIlc!5e0!3m2!1ses!2ses!4v0000000000000" loading="lazy" allowfullscreen></iframe>
+  </section>
+
+  
+<section id="confirmar">
+  <h2>Confirmación de asistencia</h2>
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdD9FnpOxuZsMyZT1P0SCgnPNEmXU8aMiG0mXTKV-CG4f4I8w/viewform?embedded=true"
+          width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+</section>
+
+
+</body>
+</html>
